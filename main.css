@@ -6,7 +6,7 @@ html {
 body {
     margin: 0rem 6rem;
     text-align: center;
-    box-sizing: initial;
+    box-sizing: border-box;
 }
 h3 {
     font-size: 2.5rem;
@@ -49,7 +49,8 @@ h1 {
     right: 0;
     white-space: nowrap;
     overflow: hidden;
-
+    position: sticky;
+    position: -webkit-sticky;
 }
 #nav {
     display:inline-block;
@@ -105,25 +106,11 @@ ul#nav {
 
 }
 /* box */
-.box_title {
+.box {
     background-color: #FFF380;
     height: auto;
     width: auto;
     margin: 2rem;
-    border-radius: 10px;
-}
-.box_description {
-    background-color: 	#FFF380;
-    display: flex;
-    height: auto;
-    margin: 2rem;
-    border-radius: 10px;
-}
-.box_cot_truyen {
-    background-color: 	#FFF380;
-    height: auto;
-    display: flex;
-    margin: 2rem;   
     border-radius: 10px;
 }
 .cac_quoc_gia_tren_dai_luc_teyvat {
@@ -197,7 +184,7 @@ ul#nav {
     }
 }
 .Sumeru {
-    background-color: #04BF8A;
+    background-color: #33FF66;
     h3 {
         color:rgb(0, 87, 0);
     }
