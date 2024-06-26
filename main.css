@@ -1,28 +1,40 @@
 html {
     background-color: #FFFFCC;
     font-size: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 body {
     margin: 0rem 6rem;
     text-align: center;
+    box-sizing: border-box;
 }
 h3 {
     font-size: 2.5rem;
-    font-family: Verdana, Tahoma, sans-serif;
     margin: auto;
 }
 h2 {
     font-size: 2rem;
-    font-family: 'Stantic Typeface';
     color:#FFCC66;
     display: block;
     margin-top: 0.5rem;
 }
 h1 {
     font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     color: #FF9900;
+}
+/* thiết bị */
+/* Dành cho điện thoại */
+@media all and (max-width: 480px) {
+
+
+}
+
+
+/* Dành cho máy tính bảng */
+@media all and (max-width: 1024px) {
+
+
 }
 /* header và navbar */
 #header {
@@ -35,9 +47,14 @@ h1 {
     top: 0;
     left: 0;
     right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
 }
 #nav {
     display:inline-block;
+    align-items: center;
 }
 ul#nav {
     margin: 0;
@@ -45,7 +62,6 @@ ul#nav {
 #nav li {
     display: inline-block;
     font-size: 2.15rem;
-    font-family: Verdana, Tahoma, sans-serif;
     text-align: left;
 }
 #nav li a {
@@ -53,8 +69,7 @@ ul#nav {
     text-decoration: none;
     line-height: 4rem;
     color: orange;
-    padding: 0rem 2.5rem;
-    font-family: Verdana, Tahoma, sans-serif;
+    padding: 0rem 1rem;
 }
 #nav li:hover a {
     background-color: #FF9900;
@@ -63,58 +78,53 @@ ul#nav {
     border-radius: 15px;
     cursor: pointer;
 }
-#header .search_icon:hover {
-    background-color: #FF9900;
-    color: #FFF380;
-    font-weight: bold;
-    display: inline-block;
-    border-radius: 15px;
-    cursor: pointer;
-}
-#header .search_icon {
-    color:  orange;
-    font-size:26px;
-    line-height: 4rem;
-    padding: 0 7rem;
-
-}
-#header .search_box {
-    float: right;
-}
 #slider{
-    margin-top: 10rem;
+    margin-top: 5rem;
     background-color: #FFFFCC;
 }
 /* content */
 #content {
-
+    background-color: #FFFFCC;
+}
+#footer {
+    background-color: #FFF380;
+    border-radius: 15px;
+    height: auto;
+    text-align: left;
+    h1 {
+        font-size: 2rem;
+    }
+}
+.footer_link {
+    font-size: 1.25rem;
+    margin-top: 7px;
+    text-decoration: none;
+    color: orange;
+    padding: 0rem 0.5rem;
+}
+.footer_item {
+    font-size: 1.25rem;
+    margin-top: 7px;
+    text-decoration: none;
+    color: orange;
+    padding: 0rem 0.5rem;
+}
+#footer .footer_link:hover {
+    background-color: #FF9900;
+    color: #FFF380;
+    cursor: pointer;
 }
 /* box */
-.box_title {
+.box {
     background-color: #FFF380;
     height: auto;
     width: auto;
     margin: 2rem;
     border-radius: 10px;
 }
-.box_description {
-    background-color: 	#FFF380;
-    display: flex;
-    height: auto;
-    margin: 2rem;
-    border-radius: 10px;
-}
-.box_cot_truyen {
+.quoc_gia_tren_dai_luc_teyvat {
     background-color: 	#FFF380;
     height: auto;
-    display: flex;
-    margin: 2rem;   
-    border-radius: 10px;
-}
-.cac_quoc_gia_tren_dai_luc_teyvat {
-    background-color: 	#FFF380;
-    height: auto;
-    display: flex;
     margin: 2rem;   
     border-radius: 10px;
 }
@@ -137,7 +147,6 @@ ul#nav {
 /* mô tả */
 .description {
     font-size: 2.15rem;
-    font-family: Verdana, Tahoma, sans-serif;    
     color: #FF9900;
     margin: 2rem;
     text-align: left;
@@ -148,9 +157,13 @@ ul#nav {
     display: flex;
     margin: 4rem;   
     border-radius: 10px;
+    h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
 }
 .Mondstadt {
-    background-color: #99FFFF;
+    background-color: #CCFFFF;
     h3 {
         color: #33CC66;
     }
@@ -168,7 +181,7 @@ ul#nav {
     }
 }
 .Inazuma {
-    background-color: #FF55FF;
+    background-color: #FDBCCF;
     h3 {
         color: purple;
     }
@@ -177,33 +190,58 @@ ul#nav {
     }
 }
 .Sumeru {
-    background-color: #30fd82ea;
+    background-color: #33FF66;
     h3 {
-        color: green;
+        color:rgb(0, 87, 0);
     }
     h2 {
-        color: green;
+        color:rgb(0, 87, 0);
     }
 }
 .Fontaine {
-    background-color: #6699FF;
+    background-color: #B5EAD7;
     h3 {
         color: blue;
     }
     h2 {
         color: blue;
+    }
+}
+.Natlan {
+    background-color: #FF9AA2;
+    h3 {
+        color: red;
+    }
+    h2 {
+        color: red;
+    }
+}
+.Snezhnaya {
+    background-color:#B8E1FF;
+    h3 {
+        color: #5586B0;
+    }
+    h2 {
+        color: #5586B0;
+    }
+}
+.Sal_Vindagnyr {
+    background-color: #A0E3F2;
+    h3 {
+        color: #3366FF;
+    }
+    h2 {
+        color: #3366FF;
     }
 }
 /* font chữ */
 .font {
     font-size: 2.15rem;
-    font-family: Verdana, Tahoma, sans-serif;
     margin: 1.5rem;
     text-align: left;
 }
 .font_nghieng {
     font-size: 2.15rem;
-    font-family: Verdana, Tahoma, sans-serif;
     font-style: italic;
     margin: 1.5rem;
     text-align: left;
@@ -218,8 +256,17 @@ ul#nav {
     color: purple;
 }
 .sume {
-    color: green;
+    color: rgb(0, 87, 0);
 }
 .fon {
     color: blue;
+}
+.nat {
+    color: #FF0000;
+}
+.sne {
+    color: 	#5586B0;
+}
+.sal{
+    color: #3366FF;
 }
