@@ -78,32 +78,41 @@ ul#nav {
     border-radius: 15px;
     cursor: pointer;
 }
-#header .search_icon:hover {
-    background-color: #FF9900;
-    color: #FFF380;
-    font-weight: bold;
-    display: inline-block;
-    border-radius: 15px;
-    cursor: pointer;
-}
-#header .search_icon {
-    color:  orange;
-    font-size:26px;
-    line-height: 4rem;
-    padding: 0 7rem;
-
-}
-#header .search_box {
-    float: right;
-}
 #slider{
-    margin-top: 10rem;
+    margin-top: 5rem;
     background-color: #FFFFCC;
 }
 /* content */
 #content {
     background-color: #FFFFCC;
-
+}
+#footer {
+    background-color: #FFF380;
+    border-radius: 15px;
+    height: auto;
+    text-align: left;
+    h1 {
+        font-size: 2rem;
+    }
+}
+.footer_link {
+    font-size: 1.25rem;
+    margin-top: 7px;
+    text-decoration: none;
+    color: orange;
+    padding: 0rem 0.5rem;
+}
+.footer_item {
+    font-size: 1.25rem;
+    margin-top: 7px;
+    text-decoration: none;
+    color: orange;
+    padding: 0rem 0.5rem;
+}
+#footer .footer_link:hover {
+    background-color: #FF9900;
+    color: #FFF380;
+    cursor: pointer;
 }
 /* box */
 .box {
@@ -113,10 +122,9 @@ ul#nav {
     margin: 2rem;
     border-radius: 10px;
 }
-.cac_quoc_gia_tren_dai_luc_teyvat {
+.quoc_gia_tren_dai_luc_teyvat {
     background-color: 	#FFF380;
     height: auto;
-    display: flex;
     margin: 2rem;   
     border-radius: 10px;
 }
@@ -153,8 +161,6 @@ ul#nav {
         text-align: center;
         font-size: 1.5rem;
     }
-    overflow: hidden;
-
 }
 .Mondstadt {
     background-color: #CCFFFF;
